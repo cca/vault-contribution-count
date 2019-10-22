@@ -1,0 +1,15 @@
+{
+  "name": "contribution-count",
+  "version": "1.0.0",
+  "description": "count contributed items per collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phette23 <phette23@gmail.com> (http://phette.net)",
+  "license": "ECL-2.0",
+  "dependencies": {
+    "rc": "^1.2.8",
+    "request": "^2.88.0"
+  }
+}
