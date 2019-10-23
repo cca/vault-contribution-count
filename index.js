@@ -25,7 +25,13 @@ function getItems(start=0) {
             json: true
         }
         request(reqOptions, (err, resp, data) => {
-            if (err) throw err
+            if (err) {
+                throw err
+                // API sends a { code, error, error_description } error response
+            } else if (data.error) {
+                console.error('EQUELLA API Error:', data)
+                process.exit(1)
+            }
             // the first time through, if our count is higher than the total
             // of available items, reset the count to be that total
             if (start === 0 && data.available < options.count) options.count = data.available
