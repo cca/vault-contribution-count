@@ -11,6 +11,8 @@ This script takes a VAULT search and then shows, for the given query, what the b
 > node index --count=Infinity --modifiedBefore=2019-01-01 --collections=5e6a957b-80d4-4dee-9081-7186586fbbe5
 > # the most recent 200 items that match the freetext query "painting"
 > node index --q=painting
+> # the most recent 200 items whose MODS title field is "Untitled"
+> node index --where="/xml/mods/titleInfo/title LIKE 'Untitled'"
 ```
 
 Any of the parameters you can pass to the openEQUELLA Search API route are accepted on the command line: https://vault.cca.edu/apidocs.do#!/search/searchItems_get_0
