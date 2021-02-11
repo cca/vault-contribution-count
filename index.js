@@ -60,7 +60,7 @@ function collectionCount(items) {
     debug('Getting names for collection UUIDs...')
     let reqOptions = {
         headers: headers,
-        url: `${options.root}/collection/?privilege=VIEW_ITEM`,
+        url: `${options.root}/collection/?privilege=VIEW_ITEM&length=500`,
         json: true
     }
     let uuids = Object.keys(counts)
