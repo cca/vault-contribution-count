@@ -73,11 +73,11 @@ function collectionCount(items) {
             }
         })
         // print "sorted hash" as best we can in JS
-        console.log("Collection\tContribution count")
+        console.log(`${'Collection'.padEnd(41)}\tContribution count`)
         uuids.sort((a, b) => {
             return counts[b].count - counts[a].count
         }).forEach(uuid => {
-           console.log(`${counts[uuid].name}\t${counts[uuid].count}`);
+           console.log(`${counts[uuid].name.padEnd(40)} \t${counts[uuid].count}`);
         });
     })
 }
