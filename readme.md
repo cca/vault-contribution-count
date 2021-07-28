@@ -1,5 +1,7 @@
 # VAULT Contribution Count
 
+**ARCHIVED** - this project is now part of the [cca/equella_scripts](https://github.com/cca/equella_scripts) repo
+
 This script takes a VAULT search and then shows, for the given query, what the breakdown of contributions across collections is. Examples:
 
 ```sh
